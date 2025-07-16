@@ -1,0 +1,70 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meethica - Sweet Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="nobg.png" alt="Meethica Logo" class="logo-img" />
+    <div class="logo">Meethica</div>
+    <ul class="nav-links">
+      <li><a href="#add-sweet">Add Sweet</a></li>
+      <li><a href="#search-sweet">Search</a></li>
+      <li><a href="#show-sweet">Show</a></li>
+    </ul>
+  </nav>
+
+  <section id="zoom-out">
+    <div class="hero-container">
+      <img class="image" src="image.png" alt="Sweet Zoom Out" />
+      <h1 class="hero-heading">Sweet Shop Manager</h1>
+    </div>
+  </section>
+
+  <section id="add-sweet" class="content-section addSweet">
+    <h2>Add a New Sweet</h2>
+    <form id="sweet-form">
+      <input type="text" name="name" placeholder="Sweet Name" required />
+      <input type="text" name="category" placeholder="Category" required />
+      <input type="number" name="price" placeholder="Price (₹)" required />
+      <input type="number" name="quantity" placeholder="Quantity (₹)" required />
+      <input type="file" name="image" accept="image/*" />
+      <button type="submit">Add Sweet</button>
+    </form>
+
+  </section>
+
+  <section id="search-sweet" class="content-section">
+    <h2>Search Sweet</h2>
+    <input type="text" id="search-input" placeholder="Search by name..." />
+    <div id="search-results" class="sweet-grid"></div>
+  </section>
+
+  <section id="show-sweet" class="content-section">
+    <h2>All Sweets</h2>
+    <div class="filters">
+      <input type="text" id="filter-name" placeholder="Filter by name" />
+      <input type="text" id="filter-category" placeholder="Filter by category" />
+
+      <select id="sort-price">
+        <option value="">Sort by Price</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+      </select>
+    </div>
+    <div id="sweet-grid" class="sweet-grid"></div>
+  </section>
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
