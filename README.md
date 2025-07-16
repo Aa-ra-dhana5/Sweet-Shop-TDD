@@ -1,7 +1,9 @@
-# 🍬 Sweet Shop Management System
+#  Meethica - Sweet Shop Management System
 
 A simple, clean, and test-driven **Sweet Shop Management System** built using **JavaScript** and **Jest**.  
 Designed as part of a kata to practice **TDD (Test-Driven Development)** and clean software design principles.
+
+🌐 **Live Demo**: [https://meethica.onrender.com](https://meethica.onrender.com)
 
 ---
 
@@ -42,12 +44,27 @@ Each functionality was implemented only **after writing a failing test case**, f
 
 ---
 
-📚 Tech Stack
- - JavaScript (ES6)
- - Node.js
- - Jest (for testing)
- - Git + GitHub
- - TDD methodology 
+
+## 🛠 Tech Stack
+
+### 💻 UI & Frontend
+
+- **HTML5**  
+- **CSS3**  
+- **JavaScript (ES6)**  
+- **GSAP** – for scroll-based zoom and animation effects  
+
+### 🧠 Logic & Testing
+
+- **Node.js** – for backend testability  
+- **Jest** – for unit testing  
+- **TDD** – Test-Driven Development methodology  
+
+### 🚀 Deployment
+
+- **Git + GitHub** – for version control  
+- **Render.com** – for live deployment  
+  - 🌐 [https://meethica.onrender.com](https://meethica.onrender.com) 
 
 ---
 
