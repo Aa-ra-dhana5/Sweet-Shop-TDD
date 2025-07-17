@@ -7,6 +7,15 @@ body {
   font-family: sans-serif;
   background-color: #fff8f2;
 }
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #d35400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 550px;
+}
 
 .navbar {
   display: flex;
@@ -30,18 +39,11 @@ body {
   margin-right: 10px;
 }
 
-.logo {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #d35400;
-  display: flex;
-  align-items: center;
-}
-
 .nav-links {
   display: flex;
   gap: 20px;
   list-style: none;
+  margin: 0 0 0 -191px;
 }
 
 .nav-links li a {
@@ -78,10 +80,8 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px hsl(0, 0%, 100%);
 
-  /* Shadows for glowing/contrast */
-  text-shadow: 2px 2px 4px rgb(255, 255, 255),
-    /* Dark outer shadow */ -2px -2px 4px rgba(0, 0, 0, 0.3),
-    /* Light reverse shadow */ 0 0 6px rgba(255, 248, 242, 0.6); /* Soft glow */
+  text-shadow: 2px 2px 4px rgb(255, 255, 255), -2px -2px 4px rgba(0, 0, 0, 0.3),
+    0 0 6px rgba(255, 248, 242, 0.6);
 
   pointer-events: none;
 }
@@ -93,7 +93,7 @@ section {
   align-items: center;
   flex-direction: column;
 
-  padding-top: 70px; /* Offset for navbar */
+  padding-top: 70px;
 }
 .addSweet {
   justify-content: center;
@@ -126,7 +126,6 @@ section {
   letter-spacing: 2px;
   animation: pop-in 1s ease forwards;
 
-  /* optional glow effect */
   text-shadow: 0 0 5px rgba(255, 165, 0, 0.4);
 }
 
