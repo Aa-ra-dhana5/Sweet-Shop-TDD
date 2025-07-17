@@ -136,7 +136,7 @@ searchInput.addEventListener("input", () => {
 gsap.registerPlugin(ScrollTrigger);
 const { innerHeight } = window;
 
-gsap.from("#zoom-out .image", {
+gsap.from("#zoom-out .image ", {
   scale: 2,
   duration: 2.5,
   scrollTrigger: {
